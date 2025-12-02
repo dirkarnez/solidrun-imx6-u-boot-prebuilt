@@ -1,7 +1,9 @@
-FROM debian:buster-slim
+FROM debian:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update
+
 RUN apt-get -y --no-install-recommends --allow-unauthenticated install \
    build-essential \
    git \
@@ -70,4 +72,5 @@ WORKDIR /workspace
 VOLUME /dist
 
 CMD [ "bash", "./makeimage.sh" ]
+
 

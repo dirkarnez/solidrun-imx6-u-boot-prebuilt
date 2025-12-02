@@ -17,6 +17,7 @@ set -e
 export PATH="/opt/arm-cortexa9_neon-linux-gnueabihf/bin:$PATH" && \
 arm-cortexa9_neon-linux-gnueabihf-gcc --version && \
 cd /workspace/u-boot-imx6 && \
+export ARCH=arm && \
 export CROSS_COMPILE="arm-cortexa9_neon-linux-gnueabihf-" && \
 announce "Building u-boot" && \
 make mx6cuboxi_defconfig && \

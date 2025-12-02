@@ -62,6 +62,7 @@ RUN cd /opt; \
    wget https://github.com/dirkarnez/crosstool-ng-prebuilt/releases/download/v20251204/arm-cortexa9_neon-linux-gnueabihf.zip && \
    unzip arm-cortexa9_neon-linux-gnueabihf.zip && \
    ls -R && \
+   /opt/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc --version && \
    rm arm-cortexa9_neon-linux-gnueabihf.zip && \
    chmod -R +x . 
    
@@ -73,6 +74,7 @@ WORKDIR /workspace
 VOLUME /dist
 
 CMD [ "bash", "./makeimage.sh" ]
+
 
 
 

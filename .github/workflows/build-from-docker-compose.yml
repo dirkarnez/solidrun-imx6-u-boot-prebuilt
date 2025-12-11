@@ -31,7 +31,7 @@ jobs:
         with:
           type: 'zip'
           directory: "dist"
-          filename: "solidrun-u-boot-imx6-${{ github.ref_name }}}-arm-cortexa9_neon-linux-gnueabihf-gcc-15.2.0-crosstool-ng-1.28.0.zip"
+          filename: "solidrun-u-boot-imx6-${{ github.ref_name }}-arm-cortexa9_neon-linux-gnueabihf-gcc-15.2.0-crosstool-ng-1.28.0.zip"
           
       - name: Release prebuilt
         uses: ncipollo/release-action@v1

@@ -18,6 +18,9 @@ solidrun-imx6-u-boot-prebuilt
 - https://github.com/rabeeh/android-imx6-kitkat
 - https://github.com/zOrg1331/fsl-gpu-viv-mx6q
 
+### U-Boot tools
+- [dirkarnez/solidrun-imx6-u-boot-tools](https://github.com/dirkarnez/solidrun-imx6-u-boot-tools)
+
 ### Standalone
 - To be tested
     - [Build and run of a simple hello world application on the Cortex®-M4/7 — Ka-Ro electronics GmbH documentation](https://karo-electronics.github.io/docs/software-documentation/tx8/cortexm4/nxp-cm4-hello-world.html)

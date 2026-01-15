@@ -10,6 +10,9 @@ solidrun-imx6-u-boot-prebuilt
 ### Android
 - https://github.com/rabeeh/android-imx6-kitkat
 
+### TODOs
+- [ ] Checks if `CONFIG_SYS_BOOT_GET_CMDLINE` is needed
+
 ### Create SD card
 - Windows
     - to remove partitions

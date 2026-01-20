@@ -12,6 +12,7 @@ solidrun-imx6-u-boot-prebuilt
 
 ### TODOs
 - [ ] Checks if `CONFIG_SYS_BOOT_GET_CMDLINE` is needed
+- [ ] [使用mkbootfs制作ramdisk根文件系统 - dolinux - 博客园](https://www.cnblogs.com/pengdonglin137/p/10468556.html)
 
 ### Create SD card
 - Windows

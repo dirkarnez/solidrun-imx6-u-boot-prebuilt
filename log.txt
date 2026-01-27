@@ -29,10 +29,10 @@ Working FDT set to 1fff3000
 Starting kernel ...
 
 [    0.000000] Booting Linux on physical CPU 0x0
-[    0.000000] Linux version 6.6.27 (runner@fv-az575-826) (arm-buildroot-linux-g                                                 nueabihf-gcc.br_real (Buildroot 2024.08.2) 13.3.0, GNU ld (GNU Binutils) 2.41) #                                                 1 SMP Fri Dec  6 14:52:55 UTC 2024
+[    0.000000] Linux version 6.6.27 (runner@fv-az575-826) (arm-buildroot-linux-gnueabihf-gcc.br_real (Buildroot 2024.08.2) 13.3.0, GNU ld (GNU Binutils) 2.41) # 1 SMP Fri Dec  6 14:52:55 UTC 2024
 [    0.000000] CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c5387d
-[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instructio                                                 n cache
-[    0.000000] OF: fdt: Machine model: SolidRun HummingBoard Dual/Quad (1.5som+e                                                 mmc)
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: SolidRun HummingBoard Dual/Quad (1.5som+emmc)
 [    0.000000] Memory policy: Data cache writealloc
 [    0.000000] cma: Reserved 64 MiB at 0x8c000000 on node -1
 [    0.000000] Zone ranges:
@@ -43,17 +43,17 @@ Starting kernel ...
 [    0.000000]   node   0: [mem 0x0000000010000000-0x000000008fffffff]
 [    0.000000] Initmem setup node 0 [mem 0x0000000010000000-0x000000008fffffff]
 [    0.000000] percpu: Embedded 13 pages/cpu s23188 r8192 d21868 u53248
-[    0.000000] Kernel command line: root=PARTUUID=00000000-01 rootwait rw consol                                                 e=ttymxc0,115200
-[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes,                                                  linear)
-[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes, li                                                 near)
+[    0.000000] Kernel command line: root=PARTUUID=00000000-01 rootwait rw console=ttymxc0,115200
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
 [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 522752
 [    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
-[    0.000000] Memory: 1991868K/2097152K available (14336K kernel code, 1313K rw                                                 data, 3920K rodata, 1024K init, 393K bss, 39748K reserved, 65536K cma-reserved,                                                  1245184K highmem)
+[    0.000000] Memory: 1991868K/2097152K available (14336K kernel code, 1313K rwdata, 3920K rodata, 1024K init, 393K bss, 39748K reserved, 65536K cma-reserved, 1245184K highmem)
 [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
 [    0.000000] rcu: Hierarchical RCU implementation.
 [    0.000000] rcu:     RCU event tracing is enabled.
 [    0.000000]  Tracing variant of Tasks RCU enabled.
-[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jif                                                 fies.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
 [    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
 [    0.000000] L2C-310 errata 752271 769419 enabled
 [    0.000000] L2C-310 enabling early BRESP for Cortex-A9
@@ -64,17 +64,17 @@ Starting kernel ...
 [    0.000000] L2C-310: CACHE_ID 0x410000c7, AUX_CTRL 0x76470001
 [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
 [    0.000000] Switching to timer-based delay loop, resolution 333ns
-[    0.000001] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 71                                                 5827882841ns
-[    0.000019] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff,                                                  max_idle_ns: 637086815595 ns
+[    0.000001] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 715827882841ns
+[    0.000019] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 637086815595 ns
 [    0.001328] Console: colour dummy device 80x30
-[    0.001373] Calibrating delay loop (skipped), value calculated using timer fr                                                 equency.. 6.00 BogoMIPS (lpj=30000)
+[    0.001373] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
 [    0.001389] CPU: Testing write buffer coherency: ok
 [    0.001429] CPU0: Spectre v2: using BPIALL workaround
 [    0.001438] pid_max: default: 32768 minimum: 301
-[    0.001565] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes, linea                                                 r)
-[    0.001591] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes,                                                  linear)
+[    0.001565] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.001591] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
 [    0.002464] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
-[    0.003664] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adju                                                 st=1.
+[    0.003664] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
 [    0.003847] Setting up static identity map for 0x10100000 - 0x10100078
 [    0.004048] rcu: Hierarchical SRCU implementation.
 [    0.004055] rcu:     Max phase no-delay instances is 1000.
@@ -89,8 +89,8 @@ Starting kernel ...
 [    0.008614] SMP: Total of 4 processors activated (24.00 BogoMIPS).
 [    0.008626] CPU: All CPU(s) started in SVC mode.
 [    0.009870] devtmpfs: initialized
-[    0.019156] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9                                                  rev 4
-[    0.019463] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, ma                                                 x_idle_ns: 19112604462750000 ns
+[    0.019156] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.019463] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
 [    0.019488] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
 [    0.022806] pinctrl core: initialized pinctrl subsystem
 [    0.024291] NET: Registered PF_NETLINK/PF_ROUTE protocol family
@@ -98,44 +98,44 @@ Starting kernel ...
 [    0.033492] thermal_sys: Registered thermal governor 'step_wise'
 [    0.033556] cpuidle: using governor menu
 [    0.033662] CPU identified as i.MX6Q, silicon rev 1.5
-[    0.041538] platform soc: Fixed dependency cycle(s) with /soc/bus@2000000/gpc                                                 @20dc000
-[    0.042247] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@280                                                 0000
-[    0.042278] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@240                                                 0000
-[    0.052190] platform 20dc000.gpc: Fixed dependency cycle(s) with /soc/bus@200                                                 0000/clock-controller@20c4000
-[    0.052945] platform 20e0000.iomuxc-gpr:ipu1_csi0_mux: Fixed dependency cycle                                                 (s) with /soc/ipu@2400000
-[    0.053153] platform 20e0000.iomuxc-gpr:ipu2_csi1_mux: Fixed dependency cycle                                                 (s) with /soc/ipu@2800000
-[    0.057945] platform 20e0000.iomuxc-gpr:ipu1_csi0_mux: Fixed dependency cycle                                                 (s) with /soc/ipu@2400000
-[    0.058063] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@240                                                 0000
-[    0.058158] platform 2400000.ipu: Fixed dependency cycle(s) with /soc/hdmi@12                                                 0000
-[    0.058248] platform 2400000.ipu: Fixed dependency cycle(s) with /soc/bus@200                                                 0000/iomuxc-gpr@20e0000/ipu1_csi0_mux
-[    0.059253] platform 20e0000.iomuxc-gpr:ipu2_csi1_mux: Fixed dependency cycle                                                 (s) with /soc/ipu@2800000
-[    0.059353] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@280                                                 0000
-[    0.059448] platform 2800000.ipu: Fixed dependency cycle(s) with /soc/hdmi@12                                                 0000
-[    0.059533] platform 2800000.ipu: Fixed dependency cycle(s) with /soc/bus@200                                                 0000/iomuxc-gpr@20e0000/ipu2_csi1_mux
+[    0.041538] platform soc: Fixed dependency cycle(s) with /soc/bus@2000000/gpc@20dc000
+[    0.042247] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@2800000
+[    0.042278] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@2400000
+[    0.052190] platform 20dc000.gpc: Fixed dependency cycle(s) with /soc/bus@2000000/clock-controller@20c4000
+[    0.052945] platform 20e0000.iomuxc-gpr:ipu1_csi0_mux: Fixed dependency cycle(s) with /soc/ipu@2400000
+[    0.053153] platform 20e0000.iomuxc-gpr:ipu2_csi1_mux: Fixed dependency cycle(s) with /soc/ipu@2800000
+[    0.057945] platform 20e0000.iomuxc-gpr:ipu1_csi0_mux: Fixed dependency cycle(s) with /soc/ipu@2400000
+[    0.058063] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@2400000
+[    0.058158] platform 2400000.ipu: Fixed dependency cycle(s) with /soc/hdmi@120000
+[    0.058248] platform 2400000.ipu: Fixed dependency cycle(s) with /soc/bus@2000000/iomuxc-gpr@20e0000/ipu1_csi0_mux
+[    0.059253] platform 20e0000.iomuxc-gpr:ipu2_csi1_mux: Fixed dependency cycle(s) with /soc/ipu@2800000
+[    0.059353] platform 120000.hdmi: Fixed dependency cycle(s) with /soc/ipu@2800000
+[    0.059448] platform 2800000.ipu: Fixed dependency cycle(s) with /soc/hdmi@120000
+[    0.059533] platform 2800000.ipu: Fixed dependency cycle(s) with /soc/bus@2000000/iomuxc-gpr@20e0000/ipu2_csi1_mux
 [    0.064633] No ATAGs?
-[    0.064787] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint                                                  registers.
+[    0.064787] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
 [    0.064801] hw-breakpoint: maximum watchpoint size is 4 bytes.
 [    0.066226] imx6q-pinctrl 20e0000.pinctrl: initialized IMX pinctrl driver
-[    0.071411] kprobes: kprobe jump-optimization is enabled. All kprobes are opt                                                 imized if possible.
-[    0.073077] gpio gpiochip0: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.075160] gpio gpiochip1: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.077059] gpio gpiochip2: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.078981] gpio gpiochip3: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.080912] gpio gpiochip4: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.082808] gpio gpiochip5: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
-[    0.084767] gpio gpiochip6: Static allocation of GPIO base is deprecated, use                                                  dynamic allocation.
+[    0.071411] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.073077] gpio gpiochip0: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.075160] gpio gpiochip1: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.077059] gpio gpiochip2: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.078981] gpio gpiochip3: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.080912] gpio gpiochip4: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.082808] gpio gpiochip5: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.084767] gpio gpiochip6: Static allocation of GPIO base is deprecated, use dynamic allocation.
 [    0.088707] SCSI subsystem initialized
 [    0.089362] usbcore: registered new interface driver usbfs
 [    0.089404] usbcore: registered new interface driver hub
 [    0.089458] usbcore: registered new device driver usb
-[    0.089598] usb_phy_generic usbphynop1: dummy supplies not allowed for exclus                                                 ive requests
-[    0.089792] usb_phy_generic usbphynop2: dummy supplies not allowed for exclus                                                 ive requests
+[    0.089598] usb_phy_generic usbphynop1: dummy supplies not allowed for exclusive requests
+[    0.089792] usb_phy_generic usbphynop2: dummy supplies not allowed for exclusive requests
 [    0.091738] i2c i2c-0: IMX I2C adapter registered
 [    0.092692] i2c i2c-1: IMX I2C adapter registered
 [    0.092941] mc: Linux media interface: v0.10
 [    0.093010] videodev: Linux video capture interface: v2.00
 [    0.093123] pps_core: LinuxPPS API ver. 1 registered
-[    0.093130] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giome                                                 tti <giometti@linux.it>
+[    0.093130] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
 [    0.093158] PTP clock support registered
 [    0.093929] Advanced Linux Sound Architecture Driver Initialized.
 [    0.095111] Bluetooth: Core ver 2.22
@@ -149,11 +149,11 @@ Starting kernel ...
 [    0.096478] VFS: Disk quotas dquot_6.6.0
 [    0.096539] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
 [    0.107814] NET: Registered PF_INET protocol family
-[    0.108259] IP idents hash table entries: 16384 (order: 5, 131072 bytes, line                                                 ar)
-[    0.110431] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096                                                  bytes, linear)
-[    0.110463] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes,                                                  linear)
-[    0.110478] TCP established hash table entries: 8192 (order: 3, 32768 bytes,                                                  linear)
-[    0.110573] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear                                                 )
+[    0.108259] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.110431] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.110463] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.110478] TCP established hash table entries: 8192 (order: 3, 32768 bytes, linear)
+[    0.110573] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
 [    0.110880] TCP: Hash tables configured (established 8192 bind 8192)
 [    0.111109] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
 [    0.111161] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
@@ -164,15 +164,15 @@ Starting kernel ...
 [    0.111999] RPC: Registered tcp-with-tls transport module.
 [    0.112006] RPC: Registered tcp NFSv4.1 backchannel transport module.
 [    0.113535] PCI: CLS 0 bytes, default 64
-[    0.114160] armv7-pmu pmu: hw perfevents: no interrupt-affinity property, gue                                                 ssing.
-[    0.114618] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counter                                                 s available
+[    0.114160] armv7-pmu pmu: hw perfevents: no interrupt-affinity property, guessing.
+[    0.114618] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
 [    0.116804] Initialise system trusted keyrings
 [    0.117047] workingset: timestamp_bits=30 max_order=19 bucket_order=0
 [    0.117734] NFS: Registering the id_resolver key type
 [    0.117775] Key type id_resolver registered
 [    0.117782] Key type id_legacy registered
 [    0.117814] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
-[    0.117822] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering                                                 ...
+[    0.117822] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
 [    0.117858] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
 [    0.118162] fuse: init (API version 7.39)
 [    0.257921] Key type asymmetric registered
@@ -182,15 +182,15 @@ Starting kernel ...
 [    0.258085] io scheduler kyber registered
 [    0.258113] io scheduler bfq registered
 [    0.262069] imx6q-pcie 1ffc000.pcie: host bridge /soc/pcie@1ffc000 ranges:
-[    0.262123] imx6q-pcie 1ffc000.pcie:       IO 0x0001f80000..0x0001f8ffff -> 0                                                 x0000000000
-[    0.262153] imx6q-pcie 1ffc000.pcie:      MEM 0x0001000000..0x0001efffff -> 0                                                 x0001000000
+[    0.262123] imx6q-pcie 1ffc000.pcie:       IO 0x0001f80000..0x0001f8ffff -> 0x0000000000
+[    0.262153] imx6q-pcie 1ffc000.pcie:      MEM 0x0001000000..0x0001efffff -> 0x0001000000
 [    0.265694] mxs-dma 110000.dma-controller: initialized
-[    0.271014] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 267, base_baud =                                                  5000000) is a IMX
+[    0.271014] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 267, base_baud = 5000000) is a IMX
 [    0.271069] printk: console [ttymxc0] enabled
-[    1.284297] imx6q-pcie 1ffc000.pcie: iATU: unroll F, 4 ob, 4 ib, align 64K, l                                                 imit 4G
-[    1.285714] 21f0000.serial: ttymxc3 at MMIO 0x21f0000 (irq = 269, base_baud =                                                  5000000) is a IMX
+[    1.284297] imx6q-pcie 1ffc000.pcie: iATU: unroll F, 4 ob, 4 ib, align 64K, limit 4G
+[    1.285714] 21f0000.serial: ttymxc3 at MMIO 0x21f0000 (irq = 269, base_baud = 5000000) is a IMX
 [    1.301259] serial serial0: tty port ttymxc3 registered
-[    1.312788] dwhdmi-imx 120000.hdmi: Detected HDMI TX controller v1.30a with H                                                 DCP (DWC HDMI 3D TX PHY)
+[    1.312788] dwhdmi-imx 120000.hdmi: Detected HDMI TX controller v1.30a with HDCP (DWC HDMI 3D TX PHY)
 [    1.335801] etnaviv etnaviv: bound 130000.gpu (ops 0xc0fab6a0)
 [    1.341940] etnaviv etnaviv: bound 134000.gpu (ops 0xc0fab6a0)
 [    1.348079] etnaviv etnaviv: bound 2204000.gpu (ops 0xc0fab6a0)
